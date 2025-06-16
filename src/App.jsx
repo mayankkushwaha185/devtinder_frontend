@@ -7,6 +7,7 @@ import appStore from "./utils/appStore";
 import Feed from "./component/Feed";
 import Connections from "./component/Connections";
 import Request from "./component/Request";
+import SignUp from "./component/SignUp";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Body />}>
               <Route path="/" element={<Feed />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/signUp" element={<SignUp />} />
               <Route path="/connections" element={<Connections />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/requests" element={<Request />} />
